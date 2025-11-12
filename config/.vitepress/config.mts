@@ -76,8 +76,9 @@ export default defineConfig({
     ],
 
     logo: '/ezi-logo.svg',
+
     editLink: {
-      pattern: 'https://github.com/eziapp-org/document/docs/:path',
+      pattern: 'https://github.com/eziapp-org/document/edit/main/docs/:path',
       text: '在GitHub上编辑此页'
     }
   }
