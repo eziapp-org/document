@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  srcDir: "..\\docs",
+  srcDir: "../docs",
   head: [
     ['link', { rel: 'icon', href: '/ezi-logo.svg' }]
   ],
