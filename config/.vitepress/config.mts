@@ -13,8 +13,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '快速开始', link: '/quick-start/introduction' },
-      { text: 'API 参考', link: '/api-reference/api-config' },
-      { text: 'FAQ', link: '/quick-start' },
+      { text: 'API 参考', link: '/api-reference/config' },
+      { text: 'FAQ', link: '/best-practices/为什么要配置包名' },
 
     ],
 

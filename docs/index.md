@@ -14,7 +14,7 @@ hero:
       link: /quick-start/introduction
     - theme: alt
       text: API 参考
-      link: /api-reference/api-config
+      link: /api-reference/config
 
 features:
   - icon: ⚡
