@@ -10,5 +10,5 @@ EziApp 是一个轻量级的跨平台桌面应用框架，目标是把现代前�
 此外，EziApp 内置了一个灵活的 builder 系统，支持跨平台打包（Windows ~~/ macOS / Linux~~）与热更新开发体验。开发者可以使用统一的配置文件（如 ezi.config.ts）定义窗口行为和版本信息等，并通过一条命令完成资源自动嵌入、构建、调试与分发。
 
 ::: tip
-想快速尝试一下？跳转到 [Hello EziApp](/quick-start/helloworld)
+想快速尝试一下？跳转到 [Hello World](/quick-start/helloworld)
 :::
