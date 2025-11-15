@@ -46,6 +46,7 @@ HelloWorld/
 ├── public/image/       # 静态资源目录
 │   └── logo.png
 ├── src/                # 源代码目录
+│   ├── main.css
 │   └── main.ts
 ├── index.html          # 应用入口 HTML
 ├── ezi.config.ts       # EziApp 配置文件
