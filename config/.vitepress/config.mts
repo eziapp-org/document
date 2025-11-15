@@ -28,30 +28,30 @@ export default defineConfig({
         items: [
           { text: '简介', link: '/quick-start/introduction' },
           { text: 'Hello EziApp', link: '/quick-start/helloworld' },
-          { text: '配置你的应用', link: '/quick-start' },
-          { text: '从模板创建应用', link: '/quick-start' },
-          { text: '从vite项目创建应用', link: '/quick-start' },
-          { text: '打包发布应用', link: '/quick-start' },
+          { text: '配置你的应用', link: '/quick-start/configuration' },
+          { text: '从模板创建应用', link: '/quick-start/template' },
+          { text: '从 Vite 项目创建应用', link: '/quick-start/vite' },
+          { text: '打包发布应用', link: '/quick-start/release' },
         ]
       },
       {
         text: '扩展',
         items: [
-          { text: '安装扩展', link: '/extensions/use-plugins' },
-          { text: '官方扩展', link: '/extensions/create-plugins' },
-          { text: '社区扩展', link: '/extensions/create-plugins' },
+          { text: '安装扩展', link: '/extensions/install' },
+          { text: '官方扩展', link: '/extensions/official' },
+          { text: '社区扩展', link: '/extensions/community' },
         ]
       },
       {
         text: 'API 参考',
         items: [
-          { text: '配置', link: '/api-reference/api-config' },
-          { text: '应用', link: '/api-reference' },
-          { text: '窗口', link: '/api-reference' },
-          { text: '外观', link: '/api-reference' },
-          { text: '托盘', link: '/api-reference' },
-          { text: '文件', link: '/api-reference' },
-          { text: '终端(调试)', link: '/api-reference' },
+          { text: '配置', link: '/api-reference/config' },
+          { text: '应用', link: '/api-reference/application' },
+          { text: '窗口', link: '/api-reference/window' },
+          { text: '外观', link: '/api-reference/appearance' },
+          { text: '托盘', link: '/api-reference/tray' },
+          { text: '文件', link: '/api-reference/file' },
+          { text: '终端(调试)', link: '/api-reference/terminal' },
         ]
       },
       {
@@ -65,8 +65,8 @@ export default defineConfig({
       {
         text: 'FAQ',
         items: [
-          { text: '为什么要配置包名', link: '/best-practices' },
-          { text: '如何储存应用数据？', link: '/best-practices' },
+          { text: '为什么要配置包名?', link: '/best-practices/为什么要配置包名' },
+          { text: '如何储存应用数据?', link: '/best-practices/如何储存应用数据' },
         ]
       }
     ],
