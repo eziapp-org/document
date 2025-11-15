@@ -27,11 +27,11 @@ export default defineConfig({
         text: '快速开始',
         items: [
           { text: '简介', link: '/quick-start/introduction' },
-          { text: 'Hello EziApp', link: '/quick-start/helloworld' },
+          { text: 'Hello World', link: '/quick-start/helloworld' },
           { text: '配置你的应用', link: '/quick-start/configuration' },
           { text: '从模板创建应用', link: '/quick-start/template' },
           { text: '从 Vite 项目创建应用', link: '/quick-start/vite' },
-          { text: '打包发布应用', link: '/quick-start/release' },
+          { text: '构建与发布', link: '/quick-start/release' },
         ]
       },
       {

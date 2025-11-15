@@ -1,3 +1,12 @@
 # 从模板创建应用
 
-⚠️ 该页面还在建设中....
+
+
+
+::: code-group
+
+``` bash [npm]
+npm create eziapp@latest
+```
+
+:::
