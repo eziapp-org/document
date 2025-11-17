@@ -6,7 +6,7 @@
 ::: code-group
 
 ``` bash [npm]
-npm create eziapp@latest
+npm create eziapp
 ```
 
 :::
