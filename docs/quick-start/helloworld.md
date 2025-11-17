@@ -5,9 +5,9 @@
 在开始之前，请确保你已经安装了以下工具：
 
 - [Node.js](https://nodejs.org/)&nbsp;&nbsp;**版本 22.12+**
-- [npm](https://www.npmjs.com/)&nbsp;&nbsp;通常会在node.js安装包中自带  
+- [npm](https://www.npmjs.com/)&nbsp;&nbsp;通常随 Node.js 安装包一同提供
 
-你可以通过以下命令检查环境是否安装成功：
+使用以下命令检查环境是否安装成功：
 
 ::: code-group
 ```bash [bash]
@@ -23,8 +23,7 @@ npm -v
 
 ## 2、创建项目
 
-你可以通过 `npm create eziapp` 命令快速生成一个 EziApp 项目。
-以下示例会指引你创建 EziApp 的 **Hello World** 应用：
+通过以下命令快速生成一个 EziApp 项目：
 
 ::: code-group
 
@@ -33,6 +32,7 @@ npm create eziapp
 ```
 
 :::
+
 执行后，npm 会下载并运行 create-eziapp 包，并引导你完成以下步骤：
 
 ### a、 选择项目初始化方式
@@ -45,7 +45,7 @@ npm create eziapp
 ```
 :::
 
-在这里直接按下回车键来选择默认值 ```Hello World Demo```，从 Hello Wolrd 演示创建项目。
+直接按下回车即可选择默认的 ```Hello World Demo``` 模板。
 
 ### b、输入项目名称
 ::: code-group
@@ -55,8 +55,8 @@ npm create eziapp
 
 ```
 :::
-在这里可以直接按下回车来使用默认值 ```eziapp-project```来创建目录，同时也可以输入你想要创建的项目文件夹名称，然后按下回车键确认。  
-如果目录不为空，CLI 会提醒你是否删除已有文件，保证项目初始化的安全性。
+按下回车即可使用默认名称 ```eziapp-project```，也可以输入自定义目录名称。  
+如果目录不为空，CLI 会提示是否清理已有文件，确保初始化安全。
 
 ### c、完成项目创建
 
@@ -71,9 +71,9 @@ Next steps:
     npm run dev
 ```
 :::
-当你看到此画面，说明项目已经创建。后续你可以通过 ```cd eziapp-project``` 打开项目路径，通过 ```npm install``` 安装项目依赖。
-通过 ```npm run dev``` 来 [调试运行应用](#4、调试运行应用)。
 
+当你看到此提示，说明项目已成功创建。  
+接下来进入项目目录，安装依赖并启动开发环境。
 
 ## 3、项目结构
 
@@ -94,7 +94,15 @@ HelloWorld/
 
 ## 4、调试运行应用
 
-使用 ```npm run dev``` 命令以调试模式运行 EziApp 应用：
+使用以下命令启动调试模式：
+::: code-group
+```bash [bash]
+# 如果之前从未运行 npm install，需要先运行 npm install 安装依赖
+npm run dev
+```
+:::
+
+运行后你会看到类似输出并自动启动一个应用程序：
 
 ::: code-group
 ``` [bash]
@@ -116,14 +124,14 @@ $ npm run dev
 ```
 :::
 
-你可以尝试修改 ```src/main.ts``` 或 ```index.html```，保存后应用程序界面会自动刷新。
+此时你可以修改 ```src/main.ts``` 或 ```index.html```，保存后应用程序页面会自动刷新。
 ::: tip
-修改 ```ezi.config.ts``` 需要重新执行 ```npm run dev``` 得到最新结果。
+修改 ```ezi.config.ts``` 后需要重新执行 ```npm run dev``` 才能生效。
 :::
 
 ## 5、构建与发布
 转到 [构建与发布](/quick-start/release) 查看更多信息。
 
 ## 常见问题
-- **```npm run dev``` 时提示： 'eziapp-builder' 不是内部或外部命令，也不是可运行的程序或批处理文件。**  
-使用 ```npm install``` 安装依赖后再继续操作。
+- 问：运行 ```npm run dev``` 或 ```npm run build``` 时提示： 'eziapp-builder' 不是内部或外部命令，也不是可运行的程序或批处理文件。  
+答：请先执行 ```npm install``` 安装依赖，再重新运行。
