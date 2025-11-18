@@ -28,7 +28,7 @@ npm -v
 ::: code-group
 
 ``` bash [npm]
-npm create eziapp
+npm create eziapp@latest
 ```
 
 :::

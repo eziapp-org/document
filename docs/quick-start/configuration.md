@@ -3,7 +3,7 @@
 在 EziApp 应用中，你需要在项目根目录下创建一个 ezi.config.ts 文件，用于描述应用的基本信息、窗口配置以及托盘菜单。配置文件通过 defineConfig 方法导出，框架会自动读取并应用。  
 
 ::: tip
-- 如果你使用 ```npm create eziapp``` 初始化项目，配置文件会自动创建
+- 如果你使用 ```npm create eziapp@latest``` 初始化项目，配置文件会自动创建
 :::
 
 ## 使用 TypeScript 类型提示
