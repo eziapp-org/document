@@ -111,7 +111,7 @@ $ npm run dev
 > dev
 > eziapp-builder --mode debug
 
-! no vite.config.ts found, using default config.
+! no vite.config.js found, using default config.
 ╔════════════════════════════════════════════════╗
 ║ VITE v7.2.2 ready in 54 ms                     ║
 ║                                                ║
