@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eziapp.dev/sitemap.xml
