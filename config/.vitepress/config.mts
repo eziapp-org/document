@@ -84,7 +84,6 @@ export default defineConfig({
     description: "更快、更轻量——使用Web技术构建原生能力客户端",
 
     head: [
-        ['link', { rel: 'icon', href: '/ezi-logo.svg' }],
         ['meta', { name: 'keywords', content: 'EziApp, desktop framework, frontend technologies,' }],
         ['meta', { property: 'og:title', content: 'EziApp 文档' }],
         ['meta', { property: 'og:description', content: '更快、更轻量——使用Web技术构建原生能力客户端' }],
