@@ -33,7 +33,7 @@ npm create eziapp@latest
 
 :::
 
-执行后，npm 会下载并运行 create-eziapp 包，并引导你完成以下步骤：
+执行后 eziapp-create 会引导你完成以下步骤：
 
 ### a、 选择项目初始化方式
 ::: code-group
