@@ -12,8 +12,8 @@ const themeConfig: DefaultTheme.Config = {
     nav: [
         { text: '首页', link: '/' },
         { text: '快速开始', link: '/quick-start/introduction' },
+        { text: '最佳实践', link: '/best-practices/配置包名' },
         { text: 'API 参考', link: '/api-reference/config' },
-        { text: 'FAQ', link: '/best-practices/为什么要配置包名' },
     ],
 
     socialLinks: [
@@ -33,11 +33,10 @@ const themeConfig: DefaultTheme.Config = {
             ]
         },
         {
-            text: '扩展',
+            text: '最佳实践',
             items: [
-                { text: '安装扩展', link: '/extensions/install' },
-                { text: '官方扩展', link: '/extensions/official' },
-                { text: '社区扩展', link: '/extensions/community' },
+                { text: '配置包名', link: '/best-practices/配置包名' },
+                { text: '储存数据', link: '/best-practices/储存数据' },
             ]
         },
         {
@@ -53,18 +52,19 @@ const themeConfig: DefaultTheme.Config = {
             ]
         },
         {
+            text: '扩展',
+            items: [
+                { text: '安装扩展', link: '/extensions/install' },
+                { text: '官方扩展', link: '/extensions/official' },
+                { text: '社区扩展', link: '/extensions/community' },
+            ]
+        },
+        {
             text: '扩展开发者指南',
             items: [
                 { text: '创建扩展', link: '/developer-guide/create-plugins' },
                 { text: '扩展 API 参考', link: '/developer-guide/plugin-api' },
                 { text: '发布扩展', link: '/developer-guide/publish-plugins' },
-            ]
-        },
-        {
-            text: 'FAQ',
-            items: [
-                { text: '为什么要配置包名?', link: '/best-practices/为什么要配置包名' },
-                { text: '如何储存应用数据?', link: '/best-practices/如何储存应用数据' },
             ]
         }
     ],
