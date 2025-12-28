@@ -46,10 +46,9 @@ const themeConfig: DefaultTheme.Config = {
                 { text: '配置', link: '/api-reference/config' },
                 { text: '应用', link: '/api-reference/application' },
                 { text: '窗口', link: '/api-reference/window' },
-                { text: '外观', link: '/api-reference/appearance' },
                 { text: '托盘', link: '/api-reference/tray' },
                 { text: '文件', link: '/api-reference/file' },
-                { text: '终端(调试)', link: '/api-reference/terminal' },
+                { text: '终端', link: '/api-reference/terminal' },
                 { text: '版本', link: '/api-reference/version' },
             ]
         },
