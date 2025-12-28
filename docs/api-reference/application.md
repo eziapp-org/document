@@ -1,7 +1,7 @@
 # 应用
 
 ## 导入
-在[配置](/api-reference/config)中填写，不提供导入。
+只能在 [配置](/api-reference/config) 中填写，不提供导入。
 ## 定义
 ```ts
 type EziApplication = {
