@@ -193,52 +193,186 @@ export declare class Window {
     id: number;
     title: string;
     constructor(id: number, title: string);
+    /**
+     * 判断窗口是否可最大化
+     * @returns {Promise<boolean>} 窗口是否可最大化
+     */
     isMaximizable(): Promise<boolean>;
+    /**
+     * 判断窗口是否已最大化
+     * @returns {Promise<boolean>} 窗口是否已最大化
+     */
     isMaximized(): Promise<boolean>;
+    /**
+     * 判断窗口是否可最小化
+     * @returns {Promise<boolean>} 窗口是否可最小化
+     */
     isMinimizable(): Promise<boolean>;
+    /**
+     * 判断窗口是否已最小化
+     * @returns {Promise<boolean>} 窗口是否已最小化
+     */
     isMinimized(): Promise<boolean>;
+    /**
+     * 判断窗口是否可移动
+     * @returns {Promise<boolean>} 窗口是否可移动
+     */
     isMovable(): Promise<boolean>;
+    /**
+     * 判断窗口是否已关闭
+     * @returns {Promise<boolean>} 窗口是否已关闭
+     */
     isClosed(): Promise<boolean>;
+    /**
+     * 判断窗口是否可聚焦
+     * @returns {Promise<boolean>} 窗口是否可聚焦
+     */
     isFocusable(): Promise<boolean>;
+    /**
+     * 判断窗口是否已聚焦
+     * @returns {Promise<boolean>} 窗口是否已聚焦
+     */
     isFocused(): Promise<boolean>;
+    /**
+     * 判断窗口是否可见
+     * @returns {Promise<boolean>} 窗口是否可见
+     */
     isVisible(): Promise<boolean>;
+    /**
+     * 判断窗口是否无边框
+     * @returns {Promise<boolean>} 窗口是否无边框
+     */
     isBorderless(): Promise<boolean>;
+    /**
+     * 获取窗口的背景模式
+     * @returns {Promise<BackgroundMode>} 窗口的背景模式
+     */
     getBackgroundMode(): Promise<BackgroundMode>;
+    /**
+     * 获取窗口的尺寸
+     * @returns {Promise<{width: number; height: number}>} 窗口的尺寸
+     */
     getSize(): Promise<{
         width: number;
         height: number;
     }>;
+    /**
+     * 获取窗口的位置
+     * @returns {Promise<{x: number; y: number}>} 窗口的位置
+     */
     getPosition(): Promise<{
         x: number;
         y: number;
     }>;
+    /**
+     * 设置窗口的标题
+     * @param title 窗口的标题
+     * @returns {Promise<"success">} 设置结果
+     */
     setTitle(title: string): Promise<"success">;
+    /**
+     * 设置窗口的背景模式
+     * @param mode 窗口的背景模式
+     * @returns {Promise<"success">} 设置结果
+     */
     setBackgroundMode(mode: BackgroundMode): Promise<"success">;
+    /**
+     * 设置窗口的尺寸
+     * @param { width, height } 窗口的宽度和高度
+     * @returns {Promise<"success">} 设置结果
+     */
     setSize({ width, height }: {
         width: number;
         height: number;
     }): Promise<"success">;
+    /**
+     * 设置窗口的位置
+     * @param { x, y } 窗口的左上角坐标
+     * @returns {Promise<"success">} 设置结果
+     */
     setPosition({ x, y }: {
         x: number;
         y: number;
     }): Promise<"success">;
+    /**
+     * 设置窗口是否可最大化
+     * @param enable 是否可最大化
+     * @returns {Promise<"success">} 设置结果
+     */
     setMaximizable(enable: boolean): Promise<"success">;
+    /**
+     * 设置窗口是否可最小化
+     * @param enable 是否可最小化
+     * @returns {Promise<"success">} 设置结果
+     */
     setMinimizable(enable: boolean): Promise<"success">;
+    /**
+     * 设置窗口是否可移动
+     * @param enable 是否可移动
+     * @returns {Promise<"success">} 设置结果
+     */
     setMovable(enable: boolean): Promise<"success">;
+    /**
+     * 设置窗口是否可聚焦
+     * @param enable 是否可聚焦
+     * @returns {Promise<"success">} 设置结果
+     */
     setFocusable(enable: boolean): Promise<"success">;
+    /**
+     * 设置窗口是否无边框
+     * @param enable 是否无边框
+     * @returns {Promise<"success">} 设置结果
+     */
     setBorderless(enable: boolean): Promise<"success">;
+    /**
+     * 设置窗口关闭前的提示信息
+     * @param options 提示信息选项
+     * @param callback 回调函数，接收用户选择的结果
+     * @returns
+     */
     setBeforeCloseMessage(options: BeforeCloseMessage, callback: BeforeCloseCallback): {
         cancel: () => void;
     };
+    /**
+     * 关闭窗口
+     */
     close(): Promise<"success">;
+    /**
+     * 刷新窗口
+     */
     reload(): Promise<"success">;
+    /**
+     * 聚焦到窗口
+     */
     focus(): Promise<"success">;
+    /**
+     * 取消聚焦窗口
+     */
     blur(): Promise<"success">;
+    /**
+     * 最小化窗口
+     */
     minimize(): Promise<"success">;
+    /**
+     * 最大化窗口
+     */
     maximize(): Promise<"success">;
+    /**
+     * 恢复窗口
+     */
     restore(): Promise<"success">;
+    /**
+     * 隐藏窗口
+     * 如果应用程序只有一个窗口并且没有托盘图标，隐藏窗口会导致应用程序退出
+     */
     hide(): Promise<"success">;
+    /**
+     * 拖动窗口
+     */
     drag(): Promise<"success">;
+    /**
+     * 显示窗口
+     */
     show(): Promise<"success">;
 }
 declare class WindowManager {
@@ -271,4 +405,6 @@ declare class WindowManager {
      */
     createWindow(options?: WindowOptions): Promise<Window>;
 }
+declare const _default: WindowManager;
+export default _default;
 ```
