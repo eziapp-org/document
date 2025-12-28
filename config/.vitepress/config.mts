@@ -71,7 +71,7 @@ const themeConfig: DefaultTheme.Config = {
 
     editLink: {
         pattern: 'https://github.com/eziapp-org/document/edit/main/docs/:path',
-        text: '在GitHub上编辑此页'
+        text: '在 GitHub 上编辑此页'
     }
 }
 
