@@ -35,8 +35,10 @@ const themeConfig: DefaultTheme.Config = {
         {
             text: '最佳实践',
             items: [
-                { text: '配置包名', link: '/best-practices/配置包名' },
-                { text: '储存数据', link: '/best-practices/储存数据' },
+                { text: '为应用程序配置包名', link: '/best-practices/为应用程序配置包名' },
+                { text: '几种储存数据方案', link: '/best-practices/几种储存数据方案' },
+                { text: '后端区分客户端版本', link: '/best-practices/后端区分客户端版本' },
+                { text: '使用系统主题强调色', link: '/best-practices/使用系统主题强调色' },
             ]
         },
         {
