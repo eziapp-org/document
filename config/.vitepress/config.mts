@@ -12,7 +12,7 @@ const themeConfig: DefaultTheme.Config = {
     nav: [
         { text: '首页', link: '/' },
         { text: '快速开始', link: '/quick-start/introduction' },
-        { text: '最佳实践', link: '/best-practices/配置包名' },
+        { text: '最佳实践', link: '/best-practices/为应用程序配置包名' },
         { text: 'API 参考', link: '/api-reference/config' },
     ],
 
