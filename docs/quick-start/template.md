@@ -27,8 +27,8 @@ npm create eziapp@latest
   > From EziApp Template
     From Existing Vite Project
 ```
-使用上下箭头或者Tab键将光标移动到 ```From EziApp Template``` 选项并按下会回车。
 :::
+使用上下箭头或者Tab键将光标移动到 ```From EziApp Template``` 选项并按下会回车。
 
 ### b、输入项目名称
 ::: code-group
