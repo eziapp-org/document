@@ -12,6 +12,7 @@ const themeConfig: DefaultTheme.Config = {
     nav: [
         { text: '首页', link: '/' },
         { text: '快速开始', link: '/quick-start/introduction' },
+        { text: 'AI Skills', link: '/ai-skills/introduction' },
         { text: '最佳实践', link: '/best-practices/为应用程序配置包名' },
         { text: 'API 参考', link: '/api-reference/config' },
     ],
@@ -30,6 +31,15 @@ const themeConfig: DefaultTheme.Config = {
                 { text: '从模板创建应用', link: '/quick-start/template' },
                 { text: '从 Vite 项目创建应用', link: '/quick-start/vite' },
                 { text: '构建与发布', link: '/quick-start/release' },
+            ]
+        },
+        {
+            text: 'AI Skills',
+            items: [
+                { text: '介绍', link: '/ai-skills/introduction' },
+                { text: 'GitHub Copilot', link: '/ai-skills/copilot-instructions' },
+                { text: 'Cursor Rules', link: '/ai-skills/cursor-rules' },
+                { text: 'EziApp Prompt', link: '/ai-skills/expert-prompt' },
             ]
         },
         {
