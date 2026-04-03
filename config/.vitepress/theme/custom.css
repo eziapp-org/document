@@ -22,3 +22,34 @@
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(100, 100, 100, 0.6);
 }
+
+.VPButton.terminal {
+    background-color: #F6F6F7;
+    color: var(--vp-c-brand-2);
+    border-radius: 0.5rem !important;
+}
+
+.VPButton.terminal::after {
+    content: '|';
+    margin-left: 2px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.dark .VPButton.terminal {
+    background-color: #161618;
+}

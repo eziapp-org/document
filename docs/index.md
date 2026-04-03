@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: API 参考
       link: /api-reference/config
+    - theme: terminal
+      text: 'npm create eziapp@latest'
+      link: false
 
 features:
 
