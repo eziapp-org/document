@@ -8,12 +8,11 @@ import tray from "@eziapp-org/bridge/tray"
 :::
 ## 定义
 ```ts
-import { Window } from "./windowm";
 export type TrayMenuItem = {
     /**
      * 菜单项的类型
      */
-    type: "normal" | "separator" | "submenu";
+    type: "text" | "separator" | "submenu";
     /**
      * 菜单项的标签
      */
@@ -34,15 +33,19 @@ export type TrayMenuItem = {
      * 子菜单项，仅当type为submenu时有效
      */
     submenu?: TrayMenuItem[];
+    /**
+     * 点击该选项时候的回调函数
+     */
+    onClick?: () => void;
 };
 declare class Tray {
     private menuItems;
     /**
      * 显示托盘图标
-     * @param mainWindow 指定点击托盘图标时要显示的主窗口
+     * 点击托盘图标时会显示当前js引擎所在的窗口
      * @returns
      */
-    show(mainWindow: Window): Promise<string>;
+    show(): Promise<string>;
     /**
      * 隐藏托盘图标
      * @returns
@@ -65,11 +68,6 @@ declare class Tray {
      * @returns
      */
     getContextMenu(): TrayMenuItem[];
-    /**
-     * 设置托盘图标菜单项点击回调
-     * @param callback 点击回调函数，参数为被点击的菜单项，参数是被点击的菜单项对象
-     */
-    setOnClick(callback: (item: TrayMenuItem) => void): string;
 }
 declare const _default: Tray;
 export default _default;

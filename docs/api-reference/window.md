@@ -55,6 +55,15 @@ export type WindowOptions = {
         height: number;
     };
     /**
+     * 窗口的最小尺寸
+     * @default { width: 100, height: 100 }
+     * @platform Windows
+     */
+    minSize?: {
+        width: number;
+        height: number;
+    };
+    /**
      * 窗口的位置
      * @property {x: number, y: number} 窗口的左上角坐标
      * @property "center" 窗口居中显示
@@ -121,14 +130,6 @@ export type WindowOptions = {
         };
     };
     /**
-     * 窗口的透明度
-     * 范围是0到1
-     * @default 1
-     * @example opacity: 0.5
-     * @platform Windows
-     */
-    opacity?: number;
-    /**
      * 窗口是否无边框
      * @default false
      * @platform Windows
@@ -159,8 +160,8 @@ export type WindowOptions = {
      */
     maximizable?: boolean;
     /**
-     * 窗口是否可关闭
-     * @default true
+     * 是否忽略鼠标事件
+     * @default false
      * @platform Windows
      */
     ignoreMouseEvents?: boolean;
@@ -257,6 +258,14 @@ export declare class Window {
         height: number;
     }>;
     /**
+     * 获取窗口的最小尺寸
+     * @returns {Promise<{width: number; height: number}>} 窗口的最小尺寸
+     */
+    getMinSize(): Promise<{
+        width: number;
+        height: number;
+    }>;
+    /**
      * 获取窗口的位置
      * @returns {Promise<{x: number; y: number}>} 窗口的位置
      */
@@ -282,6 +291,15 @@ export declare class Window {
      * @returns {Promise<"success">} 设置结果
      */
     setSize({ width, height }: {
+        width: number;
+        height: number;
+    }): Promise<"success">;
+    /**
+     * 设置窗口的最小尺寸
+     * @param { width, height } 窗口的最小宽度和高度
+     * @returns {Promise<"success">} 设置结果
+     */
+    setMinSize({ width, height }: {
         width: number;
         height: number;
     }): Promise<"success">;
@@ -313,6 +331,12 @@ export declare class Window {
      */
     setMovable(enable: boolean): Promise<"success">;
     /**
+     * 设置窗口是否可改变大小
+     * @param enable 是否可改变大小
+     * @returns {Promise<"success">} 设置结果
+     */
+    setResizable(enable: boolean): Promise<"success">;
+    /**
      * 设置窗口是否可聚焦
      * @param enable 是否可聚焦
      * @returns {Promise<"success">} 设置结果
@@ -324,6 +348,12 @@ export declare class Window {
      * @returns {Promise<"success">} 设置结果
      */
     setBorderless(enable: boolean): Promise<"success">;
+    /**
+     * 设置窗口是否置顶
+     * @param enable 是否置顶
+     * @returns {Promise<"success">} 设置结果
+     */
+    setAlwaysOnTop(enable: boolean): Promise<"success">;
     /**
      * 设置窗口关闭前的提示信息
      * @param options 提示信息选项
@@ -407,4 +437,5 @@ declare class WindowManager {
 }
 declare const _default: WindowManager;
 export default _default;
+
 ```
