@@ -50,6 +50,7 @@ const themeConfig: DefaultTheme.Config = {
                 { text: '后端区分客户端版本', link: '/best-practices/后端区分客户端版本' },
                 { text: '使用系统主题强调色', link: '/best-practices/使用系统主题强调色' },
                 { text: '使用系统原生弹窗', link: '/best-practices/使用系统原生弹窗' },
+                { text: '为应用启用托盘图标', link: '/best-practices/为应用启用托盘图标' },
             ]
         },
         {
